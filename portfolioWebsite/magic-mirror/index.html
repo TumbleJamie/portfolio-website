@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Magic Mirror</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"> </div>
+
+        <nav>
+            <i class="fas fa-times"></i>
+            <div class="logo">
+                <img src="/magic-mirror/images/logo.png" alt="" id="logo">
+            </div>
+
+            <div class="nav-middle">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="https://github.com/TumbleJamie">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                        <i class="fas fa-user"></i> Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="tone-one">
+                <div class="product-info">
+                    <h1 class="animate-bottom">Magic Mirror</h1>
+                    <p class="animate-bottom">The best addition to your smart-home</p>
+                    <div class="info-buttons">
+                        <a href="#" class="button discover-button">DISCOVER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tone-two">
+                <img src="/magic-mirror/images/mirror.jpg" alt="magic-mirror" id="mirror" class="animate-right">
+            </div>
+        </div>
+    </header>
+
+    <div class="about" id="about">
+        <div class="main-container">
+            <div class="main-content">
+                <img src="/magic-mirror/images/mirror-two.jpg" alt="" id="mirror-two" class="animate-left">
+            </div>
+            <div class="about-text animate-right">
+                <h1>Final Year Dissertation Project</h1>
+                <p>A Magic Mirror created using HTML, CSS, JavaScript and Python, with Electron being used as the framework. </p>
+                <br>
+                <p>Written from scratch and with no previous knowledge of these languages, the mirror was created for a client and as such, was produced to their exact specifications.</p>
+                <br>
+                <p>The project helped me discover a love of front-end design and development, and showed me that I wanted a career in that sector.</p>
+                <br>
+                <p>Currently, the Magic Mirror runs on a Raspberry Pi, and displays the date, time, current weather and weather forecast, a news feed, a feed of different images and a feed of historical facts. It also has Amazon Alexa built in, and uses PIR Sensors and LED Lights to make the project more interactive for the user.</p>
+            </div>
+        </div>
+    </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/magic-mirror/app.js"></script>
+
+</body>
+</html>

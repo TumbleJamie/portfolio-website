@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/magic-mirror-two/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Magic Mirror</title>
+</head>
+<body>
+
+    <!-- Header-->
+
+    <section id="header">
+        <div class="header container">
+            <div class="brand">
+                <h1>Magic Mirror</h1>
+            </div>
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- end of Header-->
+
+
+    <!-- Hero Section-->
+    <section id="hero">
+        <div class="hero container">
+            <div class="hero-text">
+                <h1>The future is here... <span>
+                </span></h1>
+                <a href="#" type="button" class="cta">View the code</a>
+            </div>
+            <div class="hero-img animate-right">
+                <img src="/magic-mirror-two/images/mirror.jpg" alt="img">
+            </div>
+        </div>
+    </section>
+    <!-- End of Hero Section-->
+
+    <!-- Features Section -->
+
+    <section id="features">
+        <div class="features container">
+            <div class="features-top">
+                <h1 class="section-title">
+                    Feature<span>s</span>
+                </h1>
+                <p>
+                    This Magic Mirror project was built for my third year dissertation project. The entire mirror was coded and built from scratch with no previous knowledge of any front-end web development. Through this Magic Mirror, I taught myself HTML, CSS, JavaScript and NodeJS, as well as using Electron as a framework. Below you'll see a list of the different features this particular Magic Mirror has, designed to a client specification and scoped out to cover all requirements.
+                </p>
+            </div>
+            <div class="features-bottom animate-bottom">
+                <div class="features-item">
+                    <div class="icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h2>Weather & 5-Day Forecast</h2>
+                    <p>The Magic Mirror uses the JSON fetch function to gather weather information according to the users location. CSS then styles this information for it to be displayed within the application. </p>
+                </div>
+                <div class="features-item">
+                    <div class="icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h2>Newsfeed & History Feed</h2>
+                    <p>A newsfeed of uplifting news and a feed of historical events that happened on this day are displayed per the client's request. The information is taken from JSON files from different subreddits.</p>
+                </div>
+                <div class="features-item">
+                    <div class="icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h2>Pictures from Around the World</h2>
+                    <p>Different pictures taken from around the world are also displayed in a feed per the client's request. Again, these images are taken from a subreddit JSON file and change every day.</p>
+                </div>
+                <div class="features-item">
+                    <div class="icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h2>Amazon Alexa</h2>
+                    <p>Amazon Alexa is built into the Magic Mirror and is activated when the clent says the word 'Alexa'. Functionality is limited on a Raspberry Pi, but Alexa can still give important information, tell jokes, give directions and check the weather!</p>
+                </div>
+                <div class="features-item">
+                    <div class="icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h2>PIR Sensor</h2>
+                    <p>A PIR Sensor (Passive infrared sensor) is used to check whether the client is sat in front of the mirror. If they are, it keeps the display on. If not, it will turn off and stay off until the client (or anyone for that matter) sits in front of the mirror again.</p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- End of Features -->
+
+    <!-- About Me -->
+
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img animate-left">
+                    <img src="/images/profile-img.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-right animate-right">
+                <h1 class="section-title">About Me</h1>
+                <h2>Front End Developer</h2>
+                <p>I'm a 28 year old third year Computer Science student who discovered a love of front end development whilst creating this Magic Mirror project. If you would like to see more of my work, please click the button below!</p>
+                <a href="http://www.jamiepeel.com" class="cta" target="_blank">Main Website</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of About Me -->
+
+    <!-- Footer -->
+
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1>Magic Mirror</h1>
+                <h2>The future is here...</h2>
+                <p>Copyright © 2021 Jamie Peel. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of Footer -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="/magic-mirror-two/app.js"></script>
+
+</body>
+</html>
